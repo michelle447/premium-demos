@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athens Masonry 2511 | Premium Masonry in Athens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        :root {
+            --bg-base: oklch(0.99 0 0);
+            --bg-surface: oklch(1 0 0);
+            --fg-base: oklch(0.15 0 0);
+            --fg-muted: oklch(0.55 0 0);
+            --primary: oklch(0.1 0 0);
+            --radius: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: var(--bg-base);
+            color: var(--fg-base);
+            -webkit-font-smoothing: antialiased;
+        }
+        .hero-gradient {
+            background: linear-gradient(145deg, oklch(0.97 0 0) 0%, oklch(0.92 0 0) 100%);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .premium-card {
+            background: var(--bg-surface);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+            border-radius: var(--radius);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .premium-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.04);
+        }
+        .stripe-button {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 999px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+        .stripe-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: oklch(0.2 0 0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bold text-lg tracking-tight">Athens Masonry 2511</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-500">
+                <a href="#services" class="hover:text-black transition-colors" style="text-decoration:none">Services</a>
+                <a href="#about" class="hover:text-black transition-colors" style="text-decoration:none">About</a>
+                <a href="#contact" class="hover:text-black transition-colors" style="text-decoration:none">Contact</a>
+            </div>
+            <a href="#contact" class="stripe-button text-sm">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-40 pb-32 px-6 border-b border-gray-200/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-semibold tracking-tighter text-gray-900 mb-6 leading-tight">
+                Modern Masonry for <br/><span class="text-gray-400">Athens</span>.
+            </h1>
+            <p class="text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Precision engineering and flawless execution. We bring enterprise-grade reliability to your residential and commercial projects.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="stripe-button text-lg px-8 py-4">Start your project</a>
+                <a href="#services" class="text-gray-600 font-medium hover:text-black transition-colors flex items-center gap-2" style="text-decoration:none">
+                    Explore services <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-32 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold tracking-tight mb-4">Uncompromising quality.</h2>
+                <p class="text-gray-500 text-lg max-w-xl">Every project is built on a foundation of rigorous standards, transparent communication, and technical excellence.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="premium-card p-8">
+                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3">Licensed & Insured</h3>
+                    <p class="text-gray-500 leading-relaxed">Full coverage and state licensing ensures your property is protected at all times during operation.</p>
+                </div>
+                <div class="premium-card p-8">
+                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-6 h-6 text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3">Rapid Response</h3>
+                    <p class="text-gray-500 leading-relaxed">Emergency dispatch protocols and streamlined scheduling to minimize your downtime.</p>
+                </div>
+                <div class="premium-card p-8">
+                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                        <i data-lucide="layout-template" class="w-6 h-6 text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-3">Modern Infrastructure</h3>
+                    <p class="text-gray-500 leading-relaxed">We utilize the latest materials and techniques to guarantee longevity and performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section id="contact" class="py-32 px-6 hero-gradient border-t border-gray-200/50">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold tracking-tight mb-6">Ready to upgrade?</h2>
+            <p class="text-xl text-gray-500 mb-10">Contact our Athens office today for a comprehensive consultation.</p>
+            <a href="tel:5550198273" class="stripe-button text-xl px-10 py-5 inline-flex items-center gap-3">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+                Call (555) 019-8273
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-400 text-sm bg-white border-t border-gray-100">
+        <p>&copy; 2026 Athens Masonry 2511. All rights reserved. | Athens, GA</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
