@@ -8,22 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <style>
-        :root {
-            --bg-base: oklch(0.99 0 0);
-            --bg-surface: oklch(1 0 0);
-            --fg-base: oklch(0.15 0 0);
-            --fg-muted: oklch(0.55 0 0);
-            --primary: oklch(0.1 0 0);
-            --radius: 12px;
-            font-family: 'Inter', sans-serif;
-        }
+        :root { --bg-base: oklch(0.99 0 0); --bg-surface: oklch(1 0 0); --fg-base: oklch(0.15 0 0); --primary: oklch(0.1 0 0); --radius: 12px; font-family: 'Inter', sans-serif; }
         body { background-color: var(--bg-base); color: var(--fg-base); -webkit-font-smoothing: antialiased; }
-        .hero-gradient { background: linear-gradient(145deg, oklch(0.97 0 0) 0%, oklch(0.92 0 0) 100%); }
-        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
-        .premium-card { background: var(--bg-surface); border: 1px solid rgba(0, 0, 0, 0.04); box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02); border-radius: var(--radius); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .premium-card:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0, 0, 0, 0.04); }
-        .stripe-button { background-color: var(--primary); color: white; border-radius: 999px; padding: 0.75rem 1.5rem; font-weight: 500; transition: all 0.2s ease; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); text-decoration: none; }
-        .stripe-button:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); background-color: oklch(0.2 0 0); }
+        .hero-gradient { background: linear-gradient(145deg, oklch(0.98 0 0) 0%, oklch(0.94 0 0) 100%); }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.06); }
+        .premium-card { background: var(--bg-surface); border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 4px 20px rgba(0,0,0,0.03); border-radius: var(--radius); transition: all 0.3s ease; }
+        .premium-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.06); }
+        .stripe-button { background-color: var(--primary); color: white; border-radius: 999px; padding: 0.75rem 1.5rem; font-weight: 500; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-decoration: none; }
+        .stripe-button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); background-color: oklch(0.2 0 0); }
     </style>
 </head>
 <body>
@@ -42,10 +34,10 @@
     <section class="hero-gradient pt-40 pb-32 px-6 border-b border-gray-200/50">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-5xl md:text-7xl font-semibold tracking-tighter text-gray-900 mb-6 leading-tight">
-                Modern Electricians for <br/><span class="text-gray-400">Newnan</span>.
+                Newnan's Premier Electricians Experts.
             </h1>
             <p class="text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Precision engineering and flawless execution. We bring enterprise-grade reliability to your residential and commercial projects.
+                Heritage Power & Light delivers uncompromising precision for residential and commercial projects across Newnan.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="#contact" class="stripe-button text-lg px-8 py-4">Start your project</a>
@@ -56,24 +48,24 @@
     <section id="services" class="py-32 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="mb-16">
-                <h2 class="text-3xl font-semibold tracking-tight mb-4">Uncompromising quality.</h2>
-                <p class="text-gray-500 text-lg max-w-xl">Every project is built on a foundation of rigorous standards, transparent communication, and technical excellence.</p>
+                <h2 class="text-3xl font-semibold tracking-tight mb-4">Heritage Power & Light Expertise</h2>
+                <p class="text-gray-500 text-lg max-w-xl">Specialized execution built on years of hands-on experience in the Newnan area.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="premium-card p-8">
-                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6"><i data-lucide="shield-check" class="w-6 h-6 text-gray-700"></i></div>
-                    <h3 class="text-xl font-medium mb-3">Licensed & Insured</h3>
-                    <p class="text-gray-500 leading-relaxed">Full coverage and state licensing ensures your property is protected at all times during operation.</p>
+                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6"><i data-lucide="tool" class="w-6 h-6 text-gray-700"></i></div>
+                    <h3 class="text-xl font-medium mb-3">Smart Wiring</h3>
+                    <p class="text-gray-500 leading-relaxed">Complete architectural rewiring and smart-home integration using state-of-the-art conduits.</p>
                 </div>
                 <div class="premium-card p-8">
-                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6"><i data-lucide="zap" class="w-6 h-6 text-gray-700"></i></div>
-                    <h3 class="text-xl font-medium mb-3">Rapid Response</h3>
-                    <p class="text-gray-500 leading-relaxed">Emergency dispatch protocols and streamlined scheduling to minimize your downtime.</p>
+                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6"><i data-lucide="check-circle" class="w-6 h-6 text-gray-700"></i></div>
+                    <h3 class="text-xl font-medium mb-3">Commercial Build-Outs</h3>
+                    <p class="text-gray-500 leading-relaxed">Heavy-duty panel upgrades, three-phase power, and industrial-grade lighting systems.</p>
                 </div>
                 <div class="premium-card p-8">
-                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6"><i data-lucide="layout-template" class="w-6 h-6 text-gray-700"></i></div>
-                    <h3 class="text-xl font-medium mb-3">Modern Infrastructure</h3>
-                    <p class="text-gray-500 leading-relaxed">We utilize the latest materials and techniques to guarantee longevity and performance.</p>
+                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6"><i data-lucide="shield" class="w-6 h-6 text-gray-700"></i></div>
+                    <h3 class="text-xl font-medium mb-3">24/7 Diagnostics</h3>
+                    <p class="text-gray-500 leading-relaxed">Rapid-response troubleshooting to eliminate electrical faults before they become emergencies.</p>
                 </div>
             </div>
         </div>
@@ -81,8 +73,8 @@
 
     <section id="contact" class="py-32 px-6 hero-gradient border-t border-gray-200/50">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-semibold tracking-tight mb-6">Ready to upgrade?</h2>
-            <p class="text-xl text-gray-500 mb-10">Contact our Newnan office today for a comprehensive consultation.</p>
+            <h2 class="text-4xl font-semibold tracking-tight mb-6">Let's build together.</h2>
+            <p class="text-xl text-gray-500 mb-10">Reach out to Heritage Power & Light directly to schedule a site visit or request a consultation.</p>
             
             <div class="premium-card max-w-lg mx-auto p-8 text-left bg-white">
                 <h3 class="text-2xl font-bold mb-4">Heritage Power & Light</h3>
@@ -90,12 +82,12 @@
                     <i data-lucide="map-pin" class="w-5 h-5"></i>
                     <span>789 Temple Ave</span>
                 </div>
-                <div class="flex items-center gap-3 mb-6 text-gray-600">
+                <div class="flex items-center gap-3 mb-6 text-gray-900">
                     <i data-lucide="phone" class="w-5 h-5"></i>
-                    <span class="font-medium">[Your Real Phone Number Here]</span>
+                    <span class="font-medium text-lg">(770) 657-2911</span>
                 </div>
-                <a href="mailto:info@example.com" class="stripe-button w-full flex justify-center items-center gap-2">
-                    <i data-lucide="mail" class="w-4 h-4"></i> Send us a message
+                <a href="tel:7706572911" class="stripe-button w-full flex justify-center items-center gap-2">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i> Call Now
                 </a>
             </div>
         </div>
